@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>万度搜索</title>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 头部内容 -->
+    <header class="headerMain">
+      <ul class="ulMain">
+        <li><a href="https://email.baidu.com/" target="_black">Dmail</a></li>
+        <li><a href="https://image.baidu.com/" target="_black">图片</a></li>
+        <li class="lastLi">
+          <a href="https://app.baidu.com/" target="_black">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-zhankai"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- logo -->
+    <div class="logo">
+      <img src="images/wandu.jpg" alt="logo图片" />
+    </div>
+
+    <!-- inputBox -->
+    <div class="inputBox">
+      <form action="https://www.baidu.com/s" method="get">
+        <input
+          type="text"
+          placeholder="在WanDu上搜索,或者输入一个网址"
+          name="wd"
+        />
+      </form>
+    </div>
+
+    <!-- mainList -->
+    <main class="mainList">
+      <div class="marignAuto">
+        <ul class="ulList clearfix">
+          <!-- <li>
+            <a href="https://www.baidu.com">
+              <div>B</div>
+              <p>baidu.com</p>
+            </a>
+            <span class="close">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </span>
+          </li> -->
+
+          <li class="lastLi">
+            <div>+</div>
+            <p>添加快捷方式</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="//at.alicdn.com/t/font_1692328_z7nup3a6ckd.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

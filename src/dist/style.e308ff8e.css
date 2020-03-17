@@ -1,0 +1,298 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.headerMain {
+  max-width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/*手机*/
+/* @media (min-width: 360px) {
+  .headerMain > .ulMain {
+    padding-left: 40px;
+  }
+} */
+
+.headerMain > .ulMain {
+  display: flex;
+  align-items: center;
+}
+.headerMain > .ulMain > li {
+  margin-right: 20px;
+  color: black;
+  font-size: 12px;
+}
+.headerMain > .ulMain > .lastLi {
+  width: 30px;
+  height: 30px;
+}
+.headerMain > .ulMain > .lastLi:hover {
+  opacity: 0.3;
+  background-color: #ccc;
+}
+.headerMain > .ulMain > .lastLi > a > .icon {
+  width: 100%;
+  height: 100%;
+}
+
+/*logo*/
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 400px) {
+  .logo {
+    height: 200px;
+    max-width: 200px;
+  }
+}
+.logo > img {
+  width: 100%;
+  height: 100%;
+}
+
+/*inputBox*/
+.inputBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 360px) {
+  .inputBox > form > input {
+    width: 250px;
+    height: 32px;
+    padding-left: 28px;
+  }
+}
+@media (min-width: 400px) {
+  .inputBox > form > input {
+    width: 300px;
+    height: 32px;
+    padding-left: 25px;
+  }
+}
+@media (min-width: 600px) {
+  .inputBox > form > input {
+    width: 400px;
+    height: 35px;
+    padding-left: 25px;
+  }
+}
+@media (min-width: 800px) {
+  .inputBox > form > input {
+    width: 500px;
+    height: 40px;
+    padding-left: 30px;
+  }
+}
+.inputBox > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputBox > form > input {
+  border: none;
+  box-shadow: 3px 3px 30px 3px #ccc;
+  border-radius: 8px;
+  outline: none;
+  background: url(/search.b89461e4.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: 6px 54%;
+}
+input::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 10px;
+}
+
+/*mainList*/
+.mainList {
+  margin-top: 30px;
+}
+.mainList > .marignAuto > .ulList > li {
+  display: flex;
+  justify-content: center;
+  float: left;
+  margin-bottom: 10px;
+  padding: 5px;
+  position: relative;
+}
+
+.mainList > .marginAuto > .ulList > li > a {
+  display: flex;
+}
+.mainList > .marignAuto > .ulList > li > .close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  right: 0px;
+}
+.mainList > .marignAuto > .ulList > li > .close > .icon {
+  width: 100%;
+  height: 100%;
+}
+
+/*360*/
+@media (min-width: 360px) {
+  .mainList > .marignAuto {
+    margin-right: -15px;
+  }
+  .mainList > .marignAuto > .ulList {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainList > .marignAuto > .ulList > li {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    font-size: 10px;
+  }
+  .mainList > .marignAuto > .ulList > li > a > p,
+  .mainList > .marignAuto > .ulList > .lastLi > p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 5px;
+  }
+  .mainList > .marignAuto > .ulList > li > a > div,
+  .mainList > .marignAuto > .ulList > .lastLi > div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+}
+
+/*400*/
+@media (min-width: 400px) {
+  .mainList > .marignAuto {
+    margin-right: -20px;
+  }
+  .mainList > .marignAuto > .ulList {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainList > .marignAuto > .ulList > li {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    font-size: 12px;
+  }
+  .mainList > .marignAuto > .ulList > li > a > p,
+  .mainList > .marignAuto > .ulList > .lastLi > p {
+    margin-top: 10px;
+  }
+  .mainList > .marignAuto > .ulList > li > a > div,
+  .mainList > .marignAuto > .ulList > .lastLi > div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+/*600*/
+@media (min-width: 600px) {
+  .mainList > .marignAuto {
+    margin-right: -20px;
+  }
+  .mainList > .marignAuto > .ulList {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainList > .marignAuto > .ulList > li {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    font-size: 12px;
+  }
+  .mainList > .marignAuto > .ulList > li > a > p,
+  .mainList > .marignAuto > .ulList > .lastLi > p {
+    margin-top: 10px;
+  }
+  .mainList > .marignAuto > .ulList > li > a > div,
+  .mainList > .marignAuto > .ulList > .lastLi > div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+/*800*/
+@media (min-width: 800px) {
+  .mainList > .marignAuto {
+    margin-right: -25px;
+  }
+  .mainList > .marignAuto > .ulList {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainList > .marignAuto > .ulList > li {
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+    font-size: 14px;
+  }
+  .mainList > .marignAuto > .ulList > li > a > p,
+  .mainList > .marignAuto > .ulList > .lastLi > p {
+    margin-top: 16px;
+  }
+  .mainList > .marignAuto > .ulList > li > a > div,
+  .mainList > .marignAuto > .ulList > .lastLi > div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .mainList > .marignAuto > .ulList > li:hover {
+    background: #ccc;
+  }
+}
+
+/*golbal css*/
+.mainList > .marignAuto > .ulList > li > a > div,
+.mainList > .marignAuto > .ulList > .lastLi > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(237, 237, 235, 0.6);
+}
+.mainList > .marignAuto > .ulList > .lastLi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
