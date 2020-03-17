@@ -1,4 +1,4 @@
-let $lastLi = $(".ulList>.lastLi");
+let $lastLi = $(".ulList>.lastLiTwo");
 let hash = JSON.parse(localStorage.getItem("x"));
 let hashMap = hash || [
   { logo: "B", url: "baidu.com" },
@@ -45,7 +45,7 @@ $(".lastLiTwo").on("click", function() {
   }
 
   $(".ulList")
-    .find("li:not(.lastLi)")
+    .find("li:not(.lastLiTwo)")
     .remove();
   hashMap.push({ logo: initials, url: newUrl2 });
   hashEach();
@@ -66,7 +66,7 @@ function remove() {
     closes[i].onclick = function() {
       hashMap.splice(i, 1);
       $(".ulList")
-        .find("li:not(.lastLi)")
+        .find("li:not(.lastLiTwo)")
         .remove();
       hashEach();
     };

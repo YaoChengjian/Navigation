@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-var $lastLi = $(".ulList>.lastLi");
+var $lastLi = $(".ulList>.lastLiTwo");
 var hash = JSON.parse(localStorage.getItem("x"));
 var hashMap = hash || [{
   logo: "B",
@@ -155,7 +155,7 @@ $(".lastLiTwo").on("click", function () {
     return;
   }
 
-  $(".ulList").find("li:not(.lastLi)").remove();
+  $(".ulList").find("li:not(.lastLiTwo)").remove();
   hashMap.push({
     logo: initials,
     url: newUrl2
@@ -179,7 +179,7 @@ function remove() {
   var _loop = function _loop(i) {
     closes[i].onclick = function () {
       hashMap.splice(i, 1);
-      $(".ulList").find("li:not(.lastLi)").remove();
+      $(".ulList").find("li:not(.lastLiTwo)").remove();
       hashEach();
     };
   };
@@ -218,7 +218,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50204" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50964" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
