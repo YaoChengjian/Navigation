@@ -27,7 +27,7 @@ function hashEach() {
 hashEach();
 
 /* 点击增加一个标签 */
-$(".lastLi").on("click", function() {
+$(".lastLiTwo").on("click", function() {
   let url1 = window.prompt("请输入你新增的网址");
   let newUrl2 = null;
   let bool = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\*\+,;=.]+$/.test(

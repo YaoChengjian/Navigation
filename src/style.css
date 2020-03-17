@@ -177,14 +177,14 @@ input::-webkit-input-placeholder {
     font-size: 10px;
   }
   .mainList > .marignAuto > .ulList > li > a > p,
-  .mainList > .marignAuto > .ulList > .lastLi > p {
+  .mainList > .marignAuto > .ulList > .lastLiTwo > p {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-top: 5px;
   }
   .mainList > .marignAuto > .ulList > li > a > div,
-  .mainList > .marignAuto > .ulList > .lastLi > div {
+  .mainList > .marignAuto > .ulList > .lastLiTwo > div {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -208,11 +208,11 @@ input::-webkit-input-placeholder {
     font-size: 12px;
   }
   .mainList > .marignAuto > .ulList > li > a > p,
-  .mainList > .marignAuto > .ulList > .lastLi > p {
+  .mainList > .marignAuto > .ulList > .lastLiTwo > p {
     margin-top: 10px;
   }
   .mainList > .marignAuto > .ulList > li > a > div,
-  .mainList > .marignAuto > .ulList > .lastLi > div {
+  .mainList > .marignAuto > .ulList > .lastLiTwo > div {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -236,11 +236,11 @@ input::-webkit-input-placeholder {
     font-size: 12px;
   }
   .mainList > .marignAuto > .ulList > li > a > p,
-  .mainList > .marignAuto > .ulList > .lastLi > p {
+  .mainList > .marignAuto > .ulList > .lastLiTwo > p {
     margin-top: 10px;
   }
   .mainList > .marignAuto > .ulList > li > a > div,
-  .mainList > .marignAuto > .ulList > .lastLi > div {
+  .mainList > .marignAuto > .ulList > .lastLiTwo > div {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -264,11 +264,11 @@ input::-webkit-input-placeholder {
     font-size: 14px;
   }
   .mainList > .marignAuto > .ulList > li > a > p,
-  .mainList > .marignAuto > .ulList > .lastLi > p {
+  .mainList > .marignAuto > .ulList > .lastLiTwo > p {
     margin-top: 16px;
   }
   .mainList > .marignAuto > .ulList > li > a > div,
-  .mainList > .marignAuto > .ulList > .lastLi > div {
+  .mainList > .marignAuto > .ulList > .lastLiTwo > div {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -280,7 +280,7 @@ input::-webkit-input-placeholder {
 
 /*golbal css*/
 .mainList > .marignAuto > .ulList > li > a > div,
-.mainList > .marignAuto > .ulList > .lastLi > div {
+.mainList > .marignAuto > .ulList > .lastLiTwo > div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,7 +288,7 @@ input::-webkit-input-placeholder {
   margin-right: auto;
   background: rgba(237, 237, 235, 0.6);
 }
-.mainList > .marignAuto > .ulList > .lastLi {
+.mainList > .marignAuto > .ulList > .lastLiTwo {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;

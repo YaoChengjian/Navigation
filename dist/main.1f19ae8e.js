@@ -139,7 +139,7 @@ function hashEach() {
 hashEach();
 /* 点击增加一个标签 */
 
-$(".lastLi").on("click", function () {
+$(".lastLiTwo").on("click", function () {
   var url1 = window.prompt("请输入你新增的网址");
   var newUrl2 = null;
   var bool = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\*\+,;=.]+$/.test(url1);
@@ -218,7 +218,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60112" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50204" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
